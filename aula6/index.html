@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    // var qualquer;
+    // var qq = "variavel let";
+    // const valorconstante= 100;
+    // if(true){
+    //     console.log(valorconstante);
+    //     var vardentrodoif = "estou dentro do if";
+    //     let letdentrodoif = "let dentro do if";
+    // } 
+    // valorconstante =  1;
+    // console.log(valorconstante);
+
+    function soma(){
+         console.log(1 + 3);
+    }
+    // soma();
+
+    function concatenarnome(){
+        var nome =" fernando";
+        var sobrenome = "rocha";
+        alert (nome + sobrenome);
+    }
+    // concatenarnome();
+
+
+function novaconcatenarnome( nome, sobrenome){
+    document.write(nome + " " + sobrenome);
+}novaconcatenarnome("fernando", "rocha");
+
+let semnome = function(){
+    alert("estou em uma funcao anonima");
+}
+
+// semnome();
+
+let funcompars = function(idade, idadepar){
+    if(idade > idadepar){
+        alert("voce tem idade maior que" + idadepar);
+     }   else{
+         alert("voce tem idade menor que" + idadepar);
+     }
+    }    
+funcompars(20, 18);
+funcompars(17, 18);
+</script>
+<body>
+    
+</body>
+</html>

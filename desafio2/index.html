@@ -1,0 +1,103 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="script2.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box
+    }
+
+    header{
+        width: 80%;
+        height: 200px;
+        background-image: linear-gradient(to left, #2196F3, #3D5AFE, #0D47A1);
+        margin: auto;
+       padding-top: 50px;
+       position: relative;
+    }
+    h1, h4{
+       
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+    }
+    .icons-list{
+        color: #2196F3;
+        font-size: 64px;
+        position: absolute;
+       margin-left: 525px;
+       margin-right: 525px;
+       margin-top: 120px;
+       background-color: white;
+      border-radius: 100%;   
+    }
+
+   .buscador{
+       background-color:#2196F3 ;
+      width: 362px;
+       height: 30px;
+       color: white;
+       cursor: pointer;
+       
+   }
+   label{
+    display: block;
+    height: auto;
+padding: 2px;
+}
+form{
+    margin-left: 520px;
+    margin-top: 50px ;
+    width: 300px;
+   height: 100px;
+   
+}
+fieldset{
+    padding: 30px;
+    border: 1px solid black;
+
+}
+      .txt{
+          width: 300px;
+          height: 30px;
+      } 
+     
+</style>
+<body>
+   
+    <header>
+      
+       <div><span class="material-icons icons-list">
+        travel_explore
+        </span> <h1> ME ACHA!
+           </h1><h4>
+            ENCONTRE UM ENDEREÇO PELO NÚMERO DE CEP
+           </h4>
+       </div>
+   </header>
+   <main>
+    <section id="busca"><form method="get">
+<fieldset class="flex">
+<label for="CEP">CEP</label>
+<input type="text" required="" placeholder="digite o CEP" class="txt" id="CEP" name="CEP" value="">
+<label for="Rua">Rua</label>
+<input type="text" placeholder="digite a Rua" class="txt" id="logradouro" name="">
+<label for="Bairro">Bairro</label>
+<input type="text" placeholder="digite o Bairro" class="txt" id="bairro" name="" >
+<label for="Cidade">Cidade</label>
+<input type="text" placeholder="digite a Cidade" class="txt" id="localidade" name="" >
+<label for="Estado">Estado</label>
+<input type="text" placeholder="digite o Estado" class="txt" id="uf" name="" >
+</fieldset>
+<input class="buscador" type="button" name="enviardados" value="BUSCAR" id="buscarcep">
+</form>
+  </section> </main>
+   <footer></footer> 
+
+</body></html>

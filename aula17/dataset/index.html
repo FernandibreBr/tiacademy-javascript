@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<script>
+    window.onload = function(){
+     const btnbuscar = document.querySelector("#btnbuscar");
+     const txtnomecli= document.querySelector("#nomecliente");
+         
+         btnbuscar.addEventListener('click', function(){
+             let datasetcliente = txtnomecli.dataset.codigo;
+             console.log(datasetcliente);
+     })
+    }
+</script>
+<body>
+ <input type="text" data-codigo="38" name="nomecliente" value="fernando" id="nomecliente">   
+<input type="button" value="BUSCAR" name="buscar" id="btnbuscar">
+</body>
+</html>
